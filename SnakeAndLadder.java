@@ -1,12 +1,15 @@
 package com.snakeandladder;
 
-public class SnakeAndLadder 
-{
+import java.util.Random;
+
+public class SnakeAndLadder {
+	
 	public static void main(String[] args) 
 	{
-		int position = 0;
-		System.out.println("Initial Position of player starts from " +position);
+		Random ran = new Random();
+		
+		int dice = ran.nextInt(6)+1;
+		System.out.println("Dice Outcome : "+dice);
 	}
-
 }
-//Snake and Ladder game played with single player at start position 0
+//Dice Outcome 1 to 6 range
